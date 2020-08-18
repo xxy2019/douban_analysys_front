@@ -1,0 +1,42 @@
+.forget{
+  padding: 60rpx;
+}
+.line{
+  display: flex;
+  font-size: 36rpx;
+  padding: 30rpx;
+  margin-bottom: 60rpx;
+  border-bottom: solid 1rpx #aaa;
+}
+.form_img{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 50rpx;
+}
+.btn{
+  background-color: #24D0C2;
+  color: #fff;
+}
+.my_code{
+  width:240rpx;
+  height:80rpx;
+  border-bottom:1px solid rgba(153,153,153,1);
+  margin-bottom: 8rpx;
+  padding-left: 20rpx;
+}
+.code_btn{
+  float: right;
+  background-color: #00B26A;
+  color: #fff;
+  position: relative;
+  left: 28rpx;
+  font-size: 32rpx;
+}
+.codebtn{
+  float: right;
+  background-color: rgba(0, 178, 106, .3);
+  color: #fff;
+  position: relative;
+  left: 28rpx;
+  font-size: 32rpx;
+}

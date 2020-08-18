@@ -1,0 +1,20 @@
+.card{
+  display: flex;
+  background-color: #fff;
+  border-radius: 20rpx;
+  height: 100rpx;
+  width: 92%;
+  padding: 20rpx;
+  margin:10rpx auto;
+}
+.name{
+  font-size: 40rpx;
+  font-weight: bold;
+  width: 40%;
+}
+.price{
+  color: #645FD7;
+  font-size: 28rpx;
+  width: 40%;
+  text-align: right;
+}

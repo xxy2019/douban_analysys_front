@@ -1,0 +1,10 @@
+<import src="../../../../templates/search/search.wxml"></import>
+<view>
+    <template is="search" data="{{inputShowed,inputVal,real_timeSearch}}"></template>
+    <view class="our_search">
+      <view>大家都在搜</view>
+      <view >
+          <view bindtap="search" data-top="{{item.name}}" class="placeholder" wx:for="{{list}}" wx:key="{{index}}">{{item.name}}</view>
+      </view>
+    </view>
+</view>

@@ -1,0 +1,35 @@
+<view>
+  <view class="nav">
+    <view class="{{title1}}}" bindtap="getAllOrder">全部订单</view>
+    <view class="{{title2}}}" bindtap="getWaitOrder">待发货</view>
+    <view class="{{title3}}}" bindtap="getOtherOrder">已发货</view>
+  </view>
+  <view class="card" hidden="{{list1}}" wx:for="{{list}}" wx:key="{{index}}" bindtap="toDetail" data-packid="{{item.packid}}">
+    <view class="title">订单<view class="content">{{item.packid==null?"未发货":item.packid}}</view></view>
+    <view class="line">商家:<view class="content">{{item.seller}}</view></view>
+    <view class="line">收件人:<view class="content">{{item.master}}</view></view>
+    <view class="line">收件人电话:<view class="content">{{item.rPhone}}</view></view>
+    <view class="line">收货地址:<view class="content">{{item.address}}</view></view>
+    <view class="line">下单时间:<view class="content">{{item.time}}</view></view>
+    <button wx:if="{{item.packid==null}}" class="delBtn" size="mini" bindtap="delOrder" data-order="{{item}}">取消订单</button>
+  </view>
+  <view class="card" hidden="{{list2}}" wx:for="{{list}}" wx:key="{{index}}" bindtap="toDetail" data-packid="{{item.packid}}" wx:if="{{item.packid==null}}">
+    <view class="title">订单<view class="content">未发货</view></view>
+    <view class="line">商家:<view class="content">{{item.seller}}</view></view>
+    <view class="line">收件人:<view class="content">{{item.master}}</view></view>
+    <view class="line">收件人电话:<view class="content">{{item.rPhone}}</view></view>
+    <view class="line">收货地址:<view class="content">{{item.address}}</view></view>
+    <view class="line">下单时间:<view class="content">{{item.time}}</view></view>
+    <button class="delBtn" size="mini" bindtap="delOrder" data-order="{{item}}">取消订单</button>
+  </view>
+  <view class="card" hidden="{{list3}}" wx:for="{{list}}" wx:key="{{index}}" bindtap="toDetail" data-packid="{{item.packid}}" wx:if="{{item.packid!=null}}">
+    <view class="title">订单<view class="content">{{item.packid}}</view></view>
+    <view class="line">商家:<view class="content">{{item.seller}}</view></view>
+    <view class="line">收件人:<view class="content">{{item.master}}</view></view>
+    <view class="line">收件人电话:<view class="content">{{item.rPhone}}</view></view>
+    <view class="line">收货地址:<view class="content">{{item.address}}</view></view>
+    <view class="line">下单时间:<view class="content">{{item.time}}</view></view>
+  </view>
+</view>
+
+

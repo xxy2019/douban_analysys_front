@@ -1,0 +1,49 @@
+.bg{
+  background-color: #fff;
+  margin: 20rpx 20rpx 160rpx;
+}
+.cart{
+  display: flex;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #f2f2f2;
+}
+.checkbox{
+  margin: auto 0rpx;
+}
+.goodImg{
+  width: 180rpx;
+  height: 180rpx;
+  margin-right: 30rpx;
+}
+.cart_content{
+  margin-top: 50rpx;
+  width: 240rpx;
+}
+.price{
+  color: #E94242;
+}
+.img{
+  width: 38rpx;
+  height: 38rpx;
+  margin:0rpx 20rpx;
+}
+.btm{
+  position:fixed;
+  bottom:0;
+  background:#fff;
+  width:100%;
+  height:140rpx;
+}
+.content{
+  float: right;
+  display: flex;
+  width: 46%;
+  margin: 30rpx 20rpx;
+}
+.buy{
+  background-color: #645FD7;
+  color: #fff;
+  width: 50%;
+  height: 80rpx;
+  border-radius: 36rpx;
+}

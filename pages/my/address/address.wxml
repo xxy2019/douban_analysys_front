@@ -1,0 +1,7 @@
+<view wx:for="{{address}}" wx:key="{{index}}" class="card">
+    <view class="line">收件人姓名:<view class="content">{{item.name}}</view></view>
+  <view class="line">收件人电话:<view class="content">{{item.phone}}</view></view>
+  <view class="line">收货地址:<view class="content">{{item.addr}}</view></view>
+  <button class="delBtn" size="mini" bindtap="delAddr" data-order="{{item}}">删除</button>
+</view>
+<button class="btn" bindtap="addAddr">添加地址</button>

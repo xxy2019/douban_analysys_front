@@ -1,0 +1,41 @@
+<image src="{{img}}" class="bg"/>
+<!-- <view class="title">Vr用户小程序</view> -->
+<view class="index">
+    <view class="{{login}}" bindtap="clickLogin">登录</view>
+    <view class="{{register}}" bindtap="clickRegister">注册</view>
+</view>
+<view class="login_content" hidden="{{register=='active'}}">
+  <form bindsubmit="formLogin" class="login_form">
+    <view class="avatar">
+      <image src="../../icon/user.png" mode="aspectFit" class="avatar_img"/>
+    </view>
+    <view class="line" hover-class="line-active">
+      <image src="../../icon/pwd.png" mode="aspectFit" class="form_img"/>
+      <input placeholder="请输入用户密码" name="pwd" password="true"/>
+    </view>
+    <button class="btn" form-type="submit">登录</button>
+  </form>
+  <navigator class="forget" url="../forget/forget">忘记密码</navigator>
+</view>
+<view class="register_content" hidden="{{login=='active'}}">
+  <form bindsubmit="formRegister" class="login_form">
+    <view class="line" hover-class="line-active">
+      <image src="../../icon/phone.png" mode="aspectFit" class="form_img"/>
+      <input placeholder="请输入手机号" value="{{value}}" name="phone" bindblur="getPhone"/>
+    </view>
+    <view style="display:flex">
+      <input type="text" value="{{value}}" class="my_code" bindblur="codeInput"/>
+      <button class="{{codeClass}}" bindtap="getCode">获取验证码</button>
+    </view>
+    <view class="line" hover-class="line-active">
+      <image src="../../icon/pwd.png" mode="aspectFit" class="form_img"/>
+      <input placeholder="请输入密码" value="{{value}}" name="password" password="true"/>
+    </view>
+    <view class="line" hover-class="line-active">
+      <image src="../../icon/pwd.png" mode="aspectFit" class="form_img"/>
+      <input placeholder="请再次输入密码" value="{{value}}" password="true" bindblur="getPwd" bindfocus="hidden"/>
+    </view>
+    <button class="btn" form-type="submit">注册</button>
+  </form>
+</view>
+

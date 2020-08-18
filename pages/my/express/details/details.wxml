@@ -1,0 +1,4 @@
+<view wx:for="{{order}}" wx:key="{{index}}" class="card">
+  <view class="time">{{item.time}}</view>
+  <view class="content">{{item.content}}</view> 
+</view>

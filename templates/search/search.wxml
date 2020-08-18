@@ -1,0 +1,23 @@
+<template name="search">
+ <view class="page__bd">
+    <view class="weui-search-bar" style="background: #f2f2f2">
+        <view class="weui-search-bar__form">
+            <view class="weui-search-bar__box">
+                <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                <input type="text" class="weui-search-bar__input" placeholder="请输入日期" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                <view class="weui-icon-clear" bindtouchstart="touchS" bindtouchend="touchE" hidden="{{inputVal.length > 0}}">
+                    <image src="../../../../icon/yuyin.png" mode="aspectFit" style="width:60rpx;height:60rpx"></image>
+                </view>
+                <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="hideInput">
+                    <icon type="clear" size="14"></icon>
+                </view>
+            </view>
+            <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+                <icon class="weui-icon-search" type="search" size="14"></icon>
+                <view class="weui-search-bar__text">请输入关键字</view>
+            </label>
+        </view>
+        <view class="weui-search-bar__cancel-btn" style="font-size:32rpx" hidden="{{!inputShowed}}" bindtap="searchInput">搜索</view>
+    </view>
+  </view>
+</template>

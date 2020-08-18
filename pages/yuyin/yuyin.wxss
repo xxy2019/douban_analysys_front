@@ -1,0 +1,23 @@
+.yuyin{
+  text-align:center
+}
+.bg{
+  width:90%;
+  height:380px;
+}
+.btn{
+  width: 50%;
+  background-color: #645FD7;
+  color: #fff;
+}
+.card{
+  background-color: #aaa;
+  color: #fff;
+  width: 89%;
+  margin:auto;
+  margin-top: 20rpx;
+}
+.text{
+  margin-right: 20rpx;
+  display: inline;
+}

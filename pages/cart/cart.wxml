@@ -1,0 +1,26 @@
+<checkbox-group bindchange="checkboxChange" class="bg">
+  <view wx:for-items="{{list}}">
+    <view class="cart">
+      <label class="checkbox"> 
+        <checkbox value="{{item.totalprice}}" checked="{{false}}"/>    
+      </label>
+      <image src="{{item.photo}}" mode="aspectFit" class="goodImg"></image>
+      <view class="cart_content">
+        <view class="title">{{item.name}}</view>
+        <view class="price">￥{{item.totalprice}}</view>
+      </view>
+      <view style="display:flex;margin:auto 20rpx">
+        <image src="../../icon/reduce.png" bindtap="reduce" mode="aspectFit" class="img"/>
+        <view class="num">{{item.count}}</view>
+        <image src="../../icon/addCart.png" bindtap="add" mode="aspectFit" class="img"/>
+      </view>
+    </view>
+  </view>
+</checkbox-group>
+<view class="btm">
+  <view class="content">
+    <view style="width:48%">合计：<view class="price">￥{{price}}</view></view>
+    <button class="buy">结算</button>
+  </view>  
+</view>
+

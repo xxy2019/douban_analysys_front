@@ -1,0 +1,21 @@
+<view class="forget">
+  <form bindsubmit="formForget" class="forget_form">
+    <view class="line" hover-class="line-active">
+      <image src="../../icon/phone.png" mode="aspectFit" class="form_img"/>
+      <input placeholder="请输入手机号" value="{{value}}" name="phone" bindblur="getPhone"/>
+    </view>
+    <view style="display:flex">
+      <input type="text" placeholder="验证码" value="{{value}}" class="my_code" bindblur="codeInput"/>
+      <button class="{{codeClass}}" bindtap="getCode">获取验证码</button>
+    </view>
+    <view class="line" hover-class="line-active">
+      <image src="../../icon/pwd.png" mode="aspectFit" class="form_img"/>
+      <input placeholder="请输入密码" value="{{value}}" name="password" password="true"/>
+    </view>
+    <view class="line" hover-class="line-active">
+      <image src="../../icon/pwd.png" mode="aspectFit" class="form_img"/>
+      <input placeholder="请再次输入密码" value="{{value}}" bindblur="getPwd" bindfocus="hidden" password="true"/>
+    </view>
+    <button class="btn" form-type="submit">找回密码</button>
+  </form>
+</view>

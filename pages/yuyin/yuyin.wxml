@@ -1,0 +1,14 @@
+<view class="yuyin">
+  <image src="../../img/248.png" mode="aspectFit" class="bg"/>
+  <view hidden="{{!myText}}">
+    您选择的是：{{text}}
+  </view>
+  <button class="btn" catchtouchstart="streamRecord" catchtouchend="streamRecordEnd">语音调节</button>
+  <view class="card" hidden="{{!choose}}">
+    您可以选择：
+    <view wx:for="{{list}}" wx:key="{{index}}" class="text">
+      {{item.value}}
+    </view>
+  </view>
+</view>
+

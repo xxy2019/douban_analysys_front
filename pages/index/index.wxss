@@ -1,0 +1,52 @@
+.card{
+  width:750rpx;
+  height:350rpx;
+  background-color: #fff;
+  margin-bottom: 15rpx;
+  padding: 20rpx 30rpx;
+}
+.top{
+  display: flex;
+  line-height: 100rpx;
+}
+.card_title{
+  font-size: 36rpx;
+  color: #333;
+  margin-bottom: 16rpx;
+  width: 400rpx;
+}
+.card_text{
+  font-size: 26rpx;
+  color: #999;
+}
+.avatar{
+  overflow:hidden;  
+  display: block;  
+  width: 80rpx;  
+  height: 80rpx;   
+  border-radius: 50%;  
+  border: 2px solid #fff;  
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  margin-right: 20rpx;
+}
+.avatar_img{
+  width: 80rpx;
+  height: 80rpx;
+}
+.price{
+  color: #645FD7;
+  width: 180rpx;
+  font-weight: bold;
+  font-size: 30rpx;
+}
+.card_icon{
+  font-size: 26rpx;
+  color: #999;
+  text-align: center;
+  width: 120rpx;
+  margin-top: 30rpx;
+}
+.photo{
+  width: 50rpx;
+  height: 50rpx;
+}

@@ -1,0 +1,32 @@
+/* pages/my/my.wxss */
+.bg{
+  background-color: #645FD7;
+  height: 200rpx;
+}
+.content{
+  position: relative;
+  top: -180rpx;
+}
+.head{
+  background-color: #fff;
+  width: 96%;
+  height: 200rpx;
+  margin:30rpx auto;
+  border-radius: 10rpx;
+  display: flex;
+  padding-top: 30rpx;
+}
+.head_card{
+  width: 33%;
+  text-align: center;
+}
+.head_icon{
+  width: 100rpx;
+  height: 100rpx;
+}
+.list_icon{
+  margin-right: 16px;
+  vertical-align: middle;
+  width:20px;
+  height: 20px;
+}

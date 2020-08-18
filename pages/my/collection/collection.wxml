@@ -1,0 +1,4 @@
+<view class="card" wx:for="{{list}}" wx:key="{{index}}" bindtap="toDetail" data-item="{{item}}">
+  <view class="name">{{item.name}}</view>
+  <view class="price">￥{{item.price}}</view>
+</view>

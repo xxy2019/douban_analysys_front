@@ -1,0 +1,33 @@
+<view class="page">
+  <mp-searchbar placeholder="请输入关键词" value="{{inputVal}}" bindblur	="searchInput"></mp-searchbar>
+  <view class="card page__bd page__bd_spacing"  wx:for="{{list}}" wx:key="{{index}}" bindtap="toDetail" data-index="{{item}}">
+    <view class="top">
+      <view class="avatar">
+        <image src="{{item.photo}}" mode="aspectFit" class="avatar_img"/>
+      </view>
+      <view class="card_title">{{item.name}}</view>
+      <view class="price">￥{{item.price}}</view>
+    </view>
+    <view class="weui-flex">
+        <view class="weui-flex__item card_text">商品编号:{{item.no}}</view>
+        <view class="weui-flex__item card_text">商品库存:{{item.inventory}}</view>
+    </view>
+    <view class="weui-flex">
+        <view class="weui-flex__item card_text">生产厂家:{{item.manufactures}}</view>
+        <view class="weui-flex__item card_text">生产日期:{{item.productiondate}}</view>
+    </view>
+     <view class="weui-flex">
+        <view class="weui-flex__item card_text">商品详情:{{item.detail}}</view>
+    </view>
+    <view class="weui-flex">
+       <view class="card_icon">
+        <image src="../../icon/index_like.png" mode="aspectFit" class="photo"></image>
+        <view>{{item.favoritesum}}人</view>
+       </view>
+       <view class="card_icon">
+        <image src="../../icon/index_collection.png" mode="aspectFit" class="photo"></image>
+        <view>{{item.collectionsum}}人</view>
+       </view> 
+    </view>     
+  </view>
+</view>

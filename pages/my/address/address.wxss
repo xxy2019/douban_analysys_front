@@ -1,0 +1,24 @@
+.card{
+  background-color: #fff;
+  margin-bottom: 20rpx;
+  padding: 20rpx;
+  padding-left: 60rpx;
+}
+.line{
+  padding-top: 10rpx;
+}
+.content{
+  float: right;
+  width: 490rpx;
+  color: #999;
+}
+.btn{
+  background-color: #645FD7;
+  color: #fff;
+  width:30%;
+}
+.delBtn{
+  background-color: #645FD7;
+  margin-left: 520rpx;
+  color: #fff;
+}

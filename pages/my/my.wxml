@@ -1,0 +1,38 @@
+<!--pages/my/my.wxml-->
+<view class="bg"></view>
+<view class="content">
+  <view class="head">
+    <navigator class="head_card" url="./like/like">
+      <image src="../../icon/like.png" mode="aspectFit" class="head_icon"/>
+      <view class="head_title">点赞</view>
+    </navigator>
+    <navigator class="head_card" url="./collection/collection">
+      <image src="../../icon/collection.png" mode="aspectFit" class="head_icon"/>
+      <view class="head_title">收藏</view>
+    </navigator>
+    <navigator class="head_card" url="./express/express">
+      <image src="../../icon/order.png" mode="aspectFit" class="head_icon"/>
+      <view class="head_title">订单</view>
+    </navigator>
+  </view>
+  <mp-cells>
+      <mp-cell link hover>
+        <navigator url="./news/news" style="display: inline-block; vertical-align: middle">我的消息</navigator>
+        <mp-badge content="8" style="margin-left: 5px;"/>
+        <image slot="title" src="../../icon/news.png" class="list_icon"></image>        
+      </mp-cell>
+      <mp-cell link hover>
+        <navigator url="./edit/edit">修改个人信息</navigator>
+        <image slot="title" src="../../icon/information.png" class="list_icon"></image>
+      </mp-cell>
+      <mp-cell link hover>
+        <navigator url="./address/address">添加收货地址</navigator>
+        <image slot="title" src="../../icon/add.png" class="list_icon"></image>
+      </mp-cell>
+      <mp-cell link hover>
+        <navigator target="miniProgram" open-type="exit">退出</navigator>
+        <image slot="title" src="../../icon/exit.png" class="list_icon"></image>
+      </mp-cell>
+  </mp-cells>
+</view>
+

@@ -1,0 +1,10 @@
+.card{
+  background-color: #fff;
+  font-size: 32rpx;
+  margin-bottom: 20rpx;
+  padding: 20rpx;
+}
+.time{
+  color:#00C4B2;
+  margin-bottom: 10rpx; 
+}

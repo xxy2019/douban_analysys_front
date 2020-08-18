@@ -1,0 +1,57 @@
+.edit{
+  width: 100%;
+  padding-top: 200rpx;
+}
+.card{
+    width:690rpx;
+    background-color: #fff;
+    border-radius:20rpx;
+    margin:0 auto 40rpx;
+    justify-items: center;
+    padding-bottom: 60rpx;
+    font-size: 38rpx;
+}
+.picker{
+  color: #999;
+}
+view.weui-cell__bd{
+    color: #333;
+}
+view.weui-cells{
+    width: 600rpx;
+    margin: auto;
+}
+view.weui-cell{
+    padding: 24rpx;
+}
+button.weui-btn{
+    margin-top: 40rpx;
+    background-color: #645FD7;
+    color: #fff;
+}
+.weui-input{
+  color: #999
+}
+.my_code{
+  width:240rpx;
+  height:64rpx;
+  border:1px solid rgba(153,153,153,1);
+  border-radius:10rpx;
+  margin-top: 6rpx;
+  margin-bottom: 8rpx;
+  padding-left: 20rpx;
+}
+.code_btn{
+  float: right;
+  background-color: #00B26A;
+  color: #fff;
+  position: relative;
+  left: 18rpx;
+}
+.codebtn{
+  float: right;
+  background-color: rgba(0, 178, 106, .3);
+  color: #fff;
+  position: relative;
+  left: 18rpx;
+}

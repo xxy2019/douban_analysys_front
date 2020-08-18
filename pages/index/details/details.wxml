@@ -1,0 +1,50 @@
+<view>
+  <image src='{{good.photo}}' class='u-img-slide' mode='aspectFill'></image>
+  <view class="content">
+    <view class="title">【{{good.name}}】</view>
+    <view class="price">￥{{good.price}}</view>
+    <view style="margin-top:10rpx">生产厂家：{{good.manufactures}}</view>
+    <view style="margin-top:10rpx">生产日期：{{good.productiondate}}</view>
+    <view style="margin-top:10rpx">商品库存：{{good.inventory}}</view>
+    <view style="margin-top:10rpx">商品描述：{{good.detail}}</view>
+    <view class="bottom">
+      <view class="btn" bindtap="getLike">
+        <image wx:if="{{!like}}" src="../../../icon/index_like.png" mode="aspectFit" class="img"/>
+        <image wx:if="{{like}}" src="../../../icon/like_active.png" mode="aspectFit" class="img"/>
+        <view style="color:{{like?'#645FD7':'#333'}}">点赞</view>
+      </view>
+      <view class="btn" bindtap="getFavor">
+        <image wx:if="{{!favor}}" src="../../../icon/index_collection.png" mode="aspectFit" class="img"/>
+        <image wx:if="{{favor}}" src="../../../icon/collection_active.png" mode="aspectFit" class="img"/>
+        <view style="color:{{favor?'#645FD7':'#333'}}">收藏</view>
+     </view>
+     <view class="btn" bindtap="getBuy">
+        <image src="../../../icon/service.png" mode="aspectFit" class="img"/>
+        <view>客服</view>
+     </view>
+      <view class="myBtn" >
+        <view class="cartBtn" bindtap="addCart">加入购物车</view>
+        <view class="buyBtn" bindtap="getBuy">立即购买</view>
+     </view>
+    </view>
+  </view>
+</view>
+<mp-actionSheet bindactiontap="btnClick" show="{{showActionsheet}}" show-cancel="{{close}}" actions="{{groups}}" data-good="{{good}}">
+  <view slot="title" style="background-color:#fff">
+    <view class="cart">
+      <image src="{{good.photo}}" mode="aspectFit" class="goodImg"></image>
+      <view class="cart_content">
+        <view class="title">{{good.name}}</view>
+        <view class="price">￥{{good.price}}</view>
+      </view> 
+    </view>
+    <view class="cart">
+      <view wx:for="{{type}}" wx:key="{{index}}" class="{{index==choose?'cartType-active type':'cartType type'}}" bindtap="choose" data-index="{{index}}">{{item}}</view>
+      <view style="display:flex;margin-left:60rpx">
+        <image src="../../../icon/reduce.png" bindtap="reduce" mode="aspectFit" class="img" style="margin-right:20rpx"></image>
+        <input value="{{num}}" bindinput="getNum" type="number" style="text-align:center"></input>
+        <image src="../../../icon/addCart.png" bindtap="add" mode="aspectFit" class="img" style="margin-left:20rpx"></image>
+      </view>
+    </view>  
+  </view>
+</mp-actionSheet>

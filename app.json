@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/index/details/details",
+    "pages/yuyin/yuyin",
+    "pages/cart/cart",
+    "pages/my/my",
+    "pages/my/like/like",
+    "pages/my/collection/collection",
+    "pages/my/express/express",
+    "pages/my/express/details/details",
+    "pages/my/express/search/search",
+    "pages/my/address/address",
+    "pages/my/address/add/add",
+    "pages/my/edit/edit",
+    
+    "pages/forget/forget"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#645FD7",
+    "navigationBarTitleText": "Vr商城",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#645FD7",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icon/index.png",
+        "selectedIconPath": "icon/index-active.png"
+      },
+      {
+        "pagePath": "pages/yuyin/yuyin",
+        "text": "语音",
+        "iconPath": "icon/yuyin.png",
+        "selectedIconPath": "icon/yuyin-active.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "icon/cart.png",
+        "selectedIconPath": "icon/cart-active.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "icon/my.png",
+        "selectedIconPath": "icon/my-active.png"
+      }
+    ]
+  },
+  "plugins": {
+    "WechatSI": {
+      "version": "0.3.3",
+      "provider": "wx069ba97219f66d99"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

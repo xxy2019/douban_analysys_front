@@ -1,0 +1,15 @@
+/* pages/xianyu/search/search.wxss */
+.placeholder{
+    margin: 12rpx;
+    padding: 0 20rpx;
+    text-align: center;
+    float: left;
+    font-size: 30rpx;
+    background-color: #fff;
+    color: #333;
+}
+.our_search{
+  margin-left:20rpx;
+  color: #999;
+  height:360rpx;
+}
